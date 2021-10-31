@@ -1,0 +1,87 @@
+.book {
+  display: flex;
+  background: #ffffff;
+  /* border: 2px solid var(--light-black); */
+  border: 2px solid rgb(73, 73, 73);
+  padding: 5px;
+
+  margin: 0 5px;
+ height: 225px;
+}
+
+.book__img,
+.book__data {
+  padding: 5px;
+}
+
+.book__img {
+  min-width: 180px;
+  overflow: hidden;
+}
+
+.book__img__cover {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.book__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 275px;
+}
+
+.tags {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.book__data__title {
+  font-size: 1.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.book__data__author {
+ font-size: .9rem;
+ color: rgb(116, 116, 116);
+ font-style: italic;
+}
+
+.book__data__body p svg {
+  width: 1rem;
+  margin-right: 5px;
+}
+
+/* .book__data__body p {
+  text-transform: capitalize;
+} */
+
+.book__data__body p span,
+.book__data__body p svg {
+  vertical-align: middle;
+  display: inline;
+}
+
+.btn__see-more {
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.btn__see-more svg {
+  width: 1rem;
+  vertical-align: middle;
+}
+
+.btn__see-more span {
+  vertical-align: middle;
+
+}

@@ -1,0 +1,80 @@
+.header {
+  background-color: var(--light-brown);
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  min-height: 100vh;
+  padding-top: 50px ;
+}
+
+.header__title {
+  font-family: var(--ghotic-font);
+  font-size: clamp(3rem, 10vw, 6.5rem); 
+  color: rgb(160, 33, 33);
+  line-height: clamp(3rem, 8vw, 8rem) !important; 
+  margin-bottom: 20px;
+}
+
+.header__subtitle {
+  font-size: clamp(1.2rem, 4vw, 1.8rem); 
+  color: var(--light-black);
+  font-family: var(--arvo-font);
+}
+
+.header__description {
+  color: var(--light-black);
+  margin-top: 5px;
+}
+
+.header-left {
+  margin-left: calc(100px - 1vw);
+  padding: 30px 0;
+}
+
+.header-right {
+  text-align: center;
+  overflow: hidden;
+}
+
+.header__img {
+  filter: drop-shadow(-3px 5px 0.50rem #bebebe);
+  max-width: 100%;
+  height: auto;
+  
+  /* comentar el overflow hidden del padre */
+  /* transform: scale(1.175); */ 
+}
+
+.btn__some-books {
+  padding: 10px 20px;
+  font-family: var(--roboto);
+  font-size: 1.1em;
+  margin-top: 15px;
+  border-radius: 0;
+  display: inline-block;
+  color: var(--medium-brown);
+  border: 2px solid var(--medium-brown);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn__some-books:hover {
+  color: #fff;
+  background-color: var(--medium-brown);
+}
+
+@media screen and (max-width: 768px) {
+  .header-left {
+    margin-left: 20px;
+  }
+  
+  .header {
+    height: 100%;
+  }
+
+  .header__img {
+    filter: drop-shadow(-3px 5px 0.50rem #bebebe);
+    max-width: initial;
+    height: 100%;
+  }
+
+}

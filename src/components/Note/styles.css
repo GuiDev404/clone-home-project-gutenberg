@@ -1,0 +1,9 @@
+.note-container {
+  background-color: rgb(241, 241, 241);
+  border-left: 4px solid rgb(187, 187, 187);
+  padding: 20px;
+}
+
+.note-container ul {
+  margin-left: 15px;
+}

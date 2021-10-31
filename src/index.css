@@ -1,0 +1,45 @@
+:root {
+  --black: #2c2c2c;
+  --light-black: #464646;
+  --white: ##f3f3f3;
+  --light-brown: #f0efea;
+  --medium-brown: #9B8053;
+
+  --arvo-font: 'Arvo', serif;
+  --ghotic-font: 'Grenze Gotisch', cursive;
+  --roboto: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--roboto), Arial, Helvetica, sans-serif;
+  background-color: var(--white);
+  line-height: 1.6;
+  color: var(--black);
+  scroll-behavior: smooth;
+}
+
+.paragraph {
+  margin: 15px 0;
+}
+
+.anchor-hovered {
+  color: var(--black);
+  padding: 3px;
+}
+
+.anchor-hovered:hover {
+  color: #fff;
+  text-decoration: none;
+  /* background: var(--medium-brown); */
+  background: #33312c;
+}
+
+.list {
+  margin-left: 30px;
+}
